@@ -339,35 +339,7 @@ ul { list-style: none; }
   height: 40px;
   background: rgba(255,255,255,0.2);
 }
-.antigravity-btn {
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: linear-gradient(135deg, var(--blue-600), var(--blue-400));
-  color: var(--white);
-  border: none;
-  padding: 14px 22px;
-  border-radius: 50px;
-  font-size: 0.9rem;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 8px 32px rgba(26,79,160,0.45);
-  transition: var(--transition);
-  animation: pulse 2.5s ease-in-out infinite;
-}
-.antigravity-btn:hover {
-  transform: scale(1.06);
-  box-shadow: 0 12px 40px rgba(26,79,160,0.6);
-}
-@keyframes pulse {
-  0%, 100% { box-shadow: 0 8px 32px rgba(26,79,160,0.45); }
-  50%       { box-shadow: 0 8px 48px rgba(46,125,212,0.7); }
-}
-.ag-icon { font-size: 1.3rem; }
+
 .hero-scroll {
   position: absolute;
   bottom: 45px;
@@ -979,49 +951,7 @@ ul { list-style: none; }
   color: var(--blue-200);
 }
 
-/* ── ANTIGRAVITY OVERLAY ── */
-.ag-overlay {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 9998;
-  pointer-events: none;
-}
-.ag-message {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  background: linear-gradient(90deg, var(--blue-700), var(--blue-500));
-  color: var(--white);
-  padding: 14px 24px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  pointer-events: all;
-}
-.ag-off-btn {
-  background: rgba(255,255,255,0.2);
-  color: var(--white);
-  border: 1px solid rgba(255,255,255,0.3);
-  padding: 6px 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.82rem;
-  font-weight: 700;
-  margin-left: 8px;
-  transition: var(--transition);
-}
-.ag-off-btn:hover { background: rgba(255,255,255,0.35); }
 
-/* ── ANTIGRAVITY: floating elements ── */
-.ag-floating {
-  position: fixed !important;
-  z-index: 9999 !important;
-  cursor: grab !important;
-  user-select: none;
-  transition: none !important;
-  pointer-events: all !important;
-}
-.ag-floating:active { cursor: grabbing !important; }
 
 /* ── ANIMATIONS ── */
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
